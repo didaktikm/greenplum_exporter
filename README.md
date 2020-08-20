@@ -1,12 +1,12 @@
 # Greenplum-exporter
 
-基于go语言为Greenplum6集成普罗米修斯(prometheus)的监控数据采集器。
+Exporter для Greenplun версии 6
 
-关于Promethues与Grafana的安装配置可博客文章：https://blog.csdn.net/inrgihc/article/details/107049023
+Установка и настройка：https://blog.csdn.net/inrgihc/article/details/107049023
 
-### 一、编译方法
+### 一、Сборка
 
-- linux系统下
+- linux
 
 ```
 git clone https://gitee.com/inrgihc/greenplum_exporter.git
@@ -14,19 +14,9 @@ cd greenplum_exporter && make build
 cd bin && ls -l
 ```
 
-- windows系统下
+### 二、 Запуск
 
-```
-git clone https://gitee.com/inrgihc/greenplum_exporter.git
-cd .\greenplum_exporter\
-.\build.cmd
-cd bin && dir
-```
-
-
-### 二、 启动采集器
-
-- linux系统下
+- linux
 
 ```
 export GPDB_DATA_SOURCE_URL=postgres://gpadmin:gpadmin@10.17.20.11:5432/postgres?sslmode=disable
